@@ -283,6 +283,6 @@ TEST_CASE("BAD INPUT")
     SUBCASE("mat / scalar OR scalar / mat")
     {
         CHECK_THROWS(I3 / 0);
-        CHECK_NOTHROW(0 / I4);
+        CHECK_THROWS(0 / I4);
     }
 }
